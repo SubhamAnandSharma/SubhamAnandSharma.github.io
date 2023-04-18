@@ -1,15 +1,15 @@
-# Pritu_Yadav_Portfolio
+# Subham_Sharma_Portfolio
 ## Welcome to my portfolio :-
 
-deployed link-> https://pritu2022.github.io/Pritu_Yadav_Portfolio/
+deployed link-> https://SubhamAnandSharma.github.io
 
 ## Navbar :-
 
-![Screenshot (263)](https://user-images.githubusercontent.com/101568121/190862487-cbfa307b-3a1e-4b7b-a972-530778ea8ce8.png)
+![Screenshot (263)]()
 
 ## About me :-
 
-![Screenshot (266)](https://user-images.githubusercontent.com/101568121/190862611-87d966a1-f9e8-4324-8059-4bf47adb263b.png)
+![Screenshot (266)]()
 
 ## Skills :-
 
@@ -17,5 +17,5 @@ deployed link-> https://pritu2022.github.io/Pritu_Yadav_Portfolio/
 
 ## Projects :-
 
-![Screenshot (264)](https://user-images.githubusercontent.com/101568121/190862616-c1c0dbae-c694-498b-bd50-3f3fd1554e80.png)
+![Screenshot (264)]()
 
