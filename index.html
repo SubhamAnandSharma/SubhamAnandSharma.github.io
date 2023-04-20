@@ -48,7 +48,9 @@
                 <div class="text-2">Subham Sharma</div>
                 <div class="text-3">And I'm a <span class="typing"></span></div>
                 <!-- <button onclick="downloadResume()">Download my Resume</button> -->
-                <a href="https://drive.google.com/file/d/1IR2VeDNqZ-TyT4XNWd6b2IJu6-3ZTVWd/view?usp=share_link" target="_blank">Resume</a>
+                <!-- https://drive.google.com/file/d/1IR2VeDNqZ-TyT4XNWd6b2IJu6-3ZTVWd/view?usp=share_link -->
+                <a  href="https://drive.google.com/file/d/1IR2VeDNqZ-TyT4XNWd6b2IJu6-3ZTVWd/view?usp=share_link" target="_blank">Resume</a>
+                
             </div>
         </div>
     </section>
@@ -195,9 +197,9 @@
                         <p>Teamiply is an application were organization can publish Check-in Forms on daily basis and get responses dynamically for teams or users </p>
                         <p class="techStack">Tech Used: React Js, HTML5, CSS3, JAVA, Spring-Boot, AWS </p>
                         <div class="repo-links">
-                            <div class="repo-div">
+                            <!-- <div class="repo-div">
                                 <span>  <a href="https://github.com/masai-builds/TeamiplyBackend" target="_blank"> Git Repo </a></span>
-                            </div>
+                            </div> -->
                             <div class="demo-div">
                                 <span> <a href="https://teamimply.vercel.app/" target="_blank">  Live Site  </a></span>
                             </div>
@@ -245,9 +247,9 @@
                         <p>Masai Learning Management System is coding learning platform where on a daily basis alot of students login and performs activities 11 to 11</p>
                         <p class="techStack">Tech Used: React Js, HTML5, CSS3, JAVA, Spring-Boot, AWS </p>
                         <div class="repo-links">
-                            <div class="repo-div">
+                            <!-- <div class="repo-div">
                                 <span>  <a href="https://github.com/masai-builds/Team6-backend" target="_blank"> Git Repo </a></span>
-                            </div>
+                            </div> -->
                             <div class="demo-div">
                                 <span> <a href="https://masai-prototype.netlify.app/" target="_blank">  Live Site  </a></span>
                             </div>
@@ -345,7 +347,8 @@ href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.c
 </body>
 </html>
 
-<script>
+<script >
+    // import { pdf } from "./Subham-Sharma-Resume.pdf"
     GitHubCalendar(".calendar", "SubhamAnandSharma");
 
     // or enable responsive functionality:
@@ -358,13 +361,27 @@ href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.c
        }
     }).then(r => r.text())
 
-    function downloadResume() {
-        var downloadLink = document.createElement("a");
-        downloadLink.href = "https://drive.google.com/file/d/13bTCDK7xJ_FSIQYy4NMXuJbHLbS81dqL/view?usp=sharing"; 
-        downloadLink.target = "_blank";
-        downloadLink.download = "Subham-Sharma-Resume.pdf"; // replace with your own resume file name and extension
-        document.body.appendChild(downloadLink);
-        downloadLink.click();
-        document.body.removeChild(downloadLink);
-    }
+    // function downloadResume() {
+    //     var downloadLink = document.createElement("a");
+    //     downloadLink.href = "https://drive.google.com/file/d/13bTCDK7xJ_FSIQYy4NMXuJbHLbS81dqL/view?usp=sharing"; 
+    //     downloadLink.target = "_blank";
+    //     downloadLink.download = "Subham-Sharma-Resume.pdf"; // replace with your own resume file name and extension
+    //     document.body.appendChild(downloadLink);
+    //     downloadLink.click();
+    //     document.body.removeChild(downloadLink);
+    // }
+
+    const handleResume = () => {
+    console.log("Hello world")
+    let alink = document.createElement("a");
+    alink.href = pdf;
+    alink.download = "Subham-Sharma-Resume.pdf";
+    alink.click();
+    viewResume();
+  };
+  const viewResume = () => {
+    window.open(
+      "https://drive.google.com/file/d/13bTCDK7xJ_FSIQYy4NMXuJbHLbS81dqL/view?usp=sharing"
+    );
+  };
 </script>
