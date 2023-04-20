@@ -47,9 +47,13 @@
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">Subham Sharma</div>
                 <div class="text-3">And I'm a <span class="typing"></span></div>
-                <!-- <button onclick="downloadResume()">Download my Resume</button> -->
-                <!-- https://drive.google.com/file/d/1IR2VeDNqZ-TyT4XNWd6b2IJu6-3ZTVWd/view?usp=share_link -->
-                <a  href="https://drive.google.com/file/d/1IR2VeDNqZ-TyT4XNWd6b2IJu6-3ZTVWd/view?usp=share_link" target="_blank">Resume</a>
+                <a href="/Subham-Sharma-Resume.pdf" download="Subham-Sharma-Resume" onclick="downloadResume()" class="menu-btn">Resume</a>
+                <script>
+                function downloadResume() {
+                  window.open('https://drive.google.com/file/d/1IR2VeDNqZ-TyT4XNWd6b2IJu6-3ZTVWd/view?usp=share_link', '_blank');
+                  return false;
+                }
+                </script>
                 
             </div>
         </div>
@@ -361,27 +365,4 @@ href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.c
        }
     }).then(r => r.text())
 
-    // function downloadResume() {
-    //     var downloadLink = document.createElement("a");
-    //     downloadLink.href = "https://drive.google.com/file/d/13bTCDK7xJ_FSIQYy4NMXuJbHLbS81dqL/view?usp=sharing"; 
-    //     downloadLink.target = "_blank";
-    //     downloadLink.download = "Subham-Sharma-Resume.pdf"; // replace with your own resume file name and extension
-    //     document.body.appendChild(downloadLink);
-    //     downloadLink.click();
-    //     document.body.removeChild(downloadLink);
-    // }
-
-    const handleResume = () => {
-    console.log("Hello world")
-    let alink = document.createElement("a");
-    alink.href = pdf;
-    alink.download = "Subham-Sharma-Resume.pdf";
-    alink.click();
-    viewResume();
-  };
-  const viewResume = () => {
-    window.open(
-      "https://drive.google.com/file/d/13bTCDK7xJ_FSIQYy4NMXuJbHLbS81dqL/view?usp=sharing"
-    );
-  };
 </script>
