@@ -131,7 +131,7 @@ section .title::after {
   color: #fff;
 }
 .navbar.sticky .menu li a{
-  color: #000;
+/*   color: #000; */
 }
 /* menu btn styling */
 .menu-btn {
